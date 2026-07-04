@@ -110,4 +110,4 @@ This node establishes an action client to the Nav2 `/navigate_to_pose` server, p
 * **Flight Demo Recordings:**
   1. **Gazebo 3D Simulation:** Located at `D:\Drone_Projects\Project_ICARUS\Project_TRINITY\docs\Core Task Gazebo 1.mp4` (showing the 3D drone trajectory).
   2. **QGroundControl Telemetry Map:** Located at `D:\Drone_Projects\Project_ICARUS\Project_TRINITY\docs\Core Task QGC.mp4` (showing the live HUD and map path).
-* **Write-up Documentation:** `APPROACH.md` (Senior Challenge solutions) and `EXPLANATION.md` (Core Task study guide).
+* **Write-up Documentation:** `APPROACH.md` (Senior Challenge solutions).
