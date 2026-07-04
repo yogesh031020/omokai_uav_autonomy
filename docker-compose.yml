@@ -1,0 +1,12 @@
+services:
+  autonomy_stack:
+    build: .
+    container_name: omokai_autonomy_stack
+    volumes:
+      - ./src:/app/src
+    environment:
+      - PYTHONUNBUFFERED=1
+    tty: true
+    stdin_open: true
+    # Run the interactive CLI pipeline on startup
+    command: python cli.py "Takeoff to 15m, form a wedge formation, go to 10,20,15, and land"
