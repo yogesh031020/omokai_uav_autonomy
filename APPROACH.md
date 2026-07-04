@@ -117,7 +117,7 @@ As required by the take-home task guidelines, the following open-source framewor
    * **License:** Apache License 2.0 (Apache-2.0)
    * **Usage:** Serves as the blueprint architectural reference for the `/navigate_to_pose` client-server action bridge pattern implemented in `src/ros2_nav2_executor.py`.
 
-5. **Yogesh's Past Work: warehouse-drone-v2**
+5. **Past Work: warehouse-drone-v2**
    * **URL:** [github.com/yogesh031020/warehouse-drone-v2](https://github.com/yogesh031020/warehouse-drone-v2)
    * **License:** MIT License
    * **Usage:** Serves as the foundational codebase reference for structuring ArduPilot waypoint structures, home launch sequence definitions, and initial SITL Canberra runway coordinate testing.
