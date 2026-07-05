@@ -44,7 +44,7 @@ When the operator commands a formation path (e.g. waypoint $P = (X, Y, Z)$), the
 * **Line Formation:**
   * Leader ($D_1$): $P_1 = (X, Y, Z)$
   * Left Follower ($D_2$): $P_2 = (X - d \cdot \sin(\psi), Y + d \cdot \cos(\psi), Z)$
-  * Right Follower ($D_3$): $P_3 = (X + d \cdot \sin(\psi), Y - d \cdot \cos(\psi), Z)$
+  * Right Follower ($D_3$): $P_3 = (X + d \cdot \sin(\psi), Y - d \cdot \sin(\psi), Z)$
 
 Commands are sent in parallel using python's `asyncio.gather()` to ensure all drones initiate trajectory changes simultaneously.
 
@@ -149,4 +149,3 @@ As required by the take-home task guidelines, the following open-source framewor
    * **URL:** [github.com/yogesh031020/Autonomous-UAV-Trinity-Stack](https://github.com/yogesh031020/Autonomous-UAV-Trinity-Stack)
    * **License:** MIT License
    * **Usage:** Serves as the design blueprint for the ROS 2 costmap navigation interface, real-time SLAM toolbox mapping, and closed-loop vision target tracking described in Challenges 2 and 3.
-
