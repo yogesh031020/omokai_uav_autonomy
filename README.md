@@ -46,18 +46,24 @@ python3 src/cli.py "Takeoff to 15m, fly to 10,20,15, and land"
 ### **2. Live Simulation Mode (WSL / Native Linux)**
 To execute the flight plan live in the Gazebo simulator:
 
-1. **Start Headless Gazebo (Terminal 1):**
+1. **Start Gazebo Server (Terminal 1):**
    ```bash
    export GZ_SIM_SYSTEM_PLUGIN_PATH=$HOME/ardupilot_gazebo/build
    gz sim -s -r /home/yogesh_e_s/ardupilot_gazebo/worlds/iris_runway.sdf
    ```
+   *(Optional)* **Start Gazebo 3D GUI Client (Terminal 1b):**
+   To visualize the flight in 3D, launch the GUI client separately in another window:
+   ```bash
+   gz sim -g
+   ```
+
 2. **Start ArduPilot SITL (Terminal 2):**
    *(Note: `--model JSON` is required to communicate with Gazebo Harmonic)*
    ```bash
    cd ~/ardupilot/ArduCopter && sim_vehicle.py -v ArduCopter -f gazebo-iris --model JSON --console --out=udp:127.0.0.1:14540
    ```
 3. **Open QGroundControl:**
-   Open QGroundControl on your desktop and select the **UDP** connection. It will connect to port `14550` and display the map and HUD.
+   Open QGroundControl on your desktop. It will automatically connect to port `14550` (or the corresponding telemetry broadcast port) and display the map and HUD.
 4. **Run Autonomy Stack (Terminal 3):**
    ```bash
    cd /mnt/d/Antigravity_Storage/scratch/omokai_uav_autonomy
